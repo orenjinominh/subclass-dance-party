@@ -30,6 +30,34 @@ $(document).ready(function() {
     dancer.$node.addClass(dancerMakerFunctionName);
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
+
+    $('.line-up').on('click', function(event) {
+      dancer.$node.addClass('line-up');
+      setTimeout(function() {
+        dancer.$node.removeClass('line-up');
+      }, 5000);
+    });
+
+    $('.dancer').mouseover(function() {
+      dancer.$node.addClass('rotate');
+      setTimeout(function() {
+        dancer.$node.removeClass('rotate');
+      }, 2000);
+    });
+    // on click,calculate closest dancer
+    var findPair = function() {
+      /* calculating position
+      loop over the dancers and create a variable to hold its position
+      use Math.floor to round down numbers
+      compare each dancer's left position with one another and find pair with lowest diff.
+            then add class 'find-pair' to bothdancers
+      then remove class with setTimeout
+
+      */
+      for (let i = 0; i < window.dancers.length; i++) {
+
+      }
+    }
   });
 });
 
