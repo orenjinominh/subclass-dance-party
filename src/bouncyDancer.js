@@ -1,5 +1,6 @@
 var MakeBouncyDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('lemon');
 };
 
 MakeBouncyDancer.prototype = Object.create(MakeDancer.prototype);
