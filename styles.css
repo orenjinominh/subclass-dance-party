@@ -10,21 +10,31 @@ body{
 }
 body, a:link, a:visited, a:active{
   color: white;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Coming Soon', cursive;
 }
 .title {
   padding: 8px 12px;
   float:right;
+  height: 41px;
+  margin-top: -10px;
+  font-family: 'Coming Soon', cursive;
+  font-size: 18px;
 }
 .topbar{
   height:32px;
   background-color: rgb(164,17,29);
   padding-top: 10px;
+  text-align: right;
 }
 
 .topbar a {
   padding: 1rem;
   margin-top: 10px;
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  color: #ddd;
 }
 
 .dancer{
@@ -111,55 +121,12 @@ body, a:link, a:visited, a:active{
   position: absolute;
 }
 
-.banana {
-  width:6em;
-  height: 6em;
-  background-color: transparent;
-  box-shadow: -1.1em 1.1em 0 0 #fcd110;
-  border-radius: 50%;
-  position: absolute;
-  top:-0.9em;
-  left:1.6em;
-}
-
-.banana:before {
-  content:"";
-  width: 0.3em;
-  height: 0.3em;
-  transform: rotate(45deg);
-  background-color: #937714;
-  position: absolute;
-  top: 5.4em;
-  left:4.3em;
-  z-index:1;
-}
-
-.banana:after {
-  content: "";
-  width: 0.4em;
-  height: 0.8em;
-  transform: rotate(31deg);
-  background-color: #b3bb03;
-  position: absolute;
-  top:1.1em;
-  left:0.2em;
-  z-index:1;
-}
-
-.banana-line {
-  width: 5.5em;
-  height: 5.8em;
-  background-color: transparent;
-  box-shadow: -0.4em 0.4em 0 0 #ffe23c;
-  border-radius: 50%;
-  position: absolute;
-  top:-0.7em;
-  left:1.7em;
-  transform: rotate(-4deg);
+.slow-dance {
+  transform: scale(2, 0.5);
 }
 
 .line-up {
-  left: 300px !important;
+  top: 550px !important;
 }
 
 .rotate {
